@@ -5,7 +5,7 @@ A Docker and PHP 8 development environment with NGINX and MariaDB
 * [docker](https://docs.docker.com/get-docker/)
 * [docker-compose](https://docs.docker.com/compose/)
 #### Optional
-* [composer](https://getcomposer.org/download/) or (see [Creating a Composer Alias](#creating-a-composer-alias) below)
+* [composer](https://getcomposer.org/download/) or (see [Creating a Composer Alias](https://gist.github.com/danostech/898256c58d3d563b44604487a30ebf93))
 * git (optional, but you're here, so...)
 
 ---
@@ -21,7 +21,3 @@ A Docker and PHP 8 development environment with NGINX and MariaDB
 5. `composer require --dev symfony/maker-bundle`
 6. `composer require doctrine/annotations`
 7. modify `composer.json` change the php requirement to `"php": "~8.0"`,
-
-#### Creating a Composer Alias
-In .bashrc or .bash_aliases, whichever you use, add this line  
-`alias composer='docker run --rm -it -v ${PWD}:/app --user $(id -u):$(id -g) composer'`
