@@ -6,7 +6,7 @@ A Docker and PHP 8 development environment with NGINX and MariaDB
 * [docker-compose](https://docs.docker.com/compose/)
 #### Optional
 * composer or (see [Creating a Composer Alias](#creating-a-composer-alias) below)
-* git (optional)
+* git (optional, but you're here, so...)
 
 ---
 ### Setup
