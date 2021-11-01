@@ -10,8 +10,7 @@ A Docker and PHP 8 development environment with NGINX and MariaDB
 
 ---
 ### Setup
-* [Download](https://github.com/danostech/docker-php8/archive/refs/heads/master.zip)
-  or clone this repository
+* run `git clone git@github.com:danostech/docker-php8.git` or click [here](https://github.com/danostech/docker-php8/generate) to create a repository from this template.
 
 ## Symfony 5 API with a docker development environment
 1. `composer create-project symfony/skeleton api`
