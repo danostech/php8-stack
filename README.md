@@ -9,7 +9,7 @@ Quick setup instructions can be found below.
 * [docker-compose](https://docs.docker.com/compose/)
 
 ### Setup
-Clone the repo
+Clone this repository or create a new repository from this [template](https://github.com/danostech/docker-php8/generate) and follow the insructions below
 ```shell
 git clone git@github.com:danostech/docker-php8.git your_app_name
 ```
