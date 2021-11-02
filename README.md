@@ -29,7 +29,7 @@ Update ports, container names, and environment variables
 # change ports in the web and/or php containers
 
 # .env
-# change the  MYSQL_USER, MYSQL_PASSWORD, and MYSQL_DATABASE environment variables
+# change the MYSQL_USER, MYSQL_PASSWORD, and MYSQL_DATABASE environment variables
 ```
 Run docker-compose
 ```shell
@@ -38,3 +38,7 @@ docker-compose up -d
 
 If using the default ports in `docker-compose.yml`
 go to http://localhost:8080 in your browser to view your php config.
+
+### Notes
+
+Any environment variables created in `.env` will be available in the php-fpm container. 
