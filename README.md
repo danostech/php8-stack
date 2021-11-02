@@ -9,28 +9,32 @@ Quick setup instructions can be found below.
 * [docker-compose](https://docs.docker.com/compose/)
 
 ### Setup
+Clone the repo
 ```shell
-# Clone the repo
 git clone git@github.com:danostech/docker-php8.git your_app_name
-
-# Create your public directory
+```
+Create your public directory
+```shell
 cd your_app_name
 mkdir -p app/public
-
-# (optional)
-# -----------
-# edit docker-compose.yml
+```
+Create index.php file
+```shell
+echo '<?php phpinfo(); ?>' >> app/public/index.php
+```
+Update ports, container names, and environment variables
+```shell
+# docker-compose.yml
 # change the names of the containers from `demo_*` to your app.
 # change ports in the web and/or php containers
 
-# edit .env
+# .env
 # change the  MYSQL_USER, MYSQL_PASSWORD, and MYSQL_DATABASE environment variables
-# -------------------------------------------------------------------
-
-# run docker
+```
+Run docker-compose
+```shell
 docker-compose up -d
 ```
 
-Create an `index.php` file in `app/public`.  
-
-Go to http://localhost:8080 in your browser.
+If using the default ports in `docker-compose.yml`
+go to http://localhost:8080 in your browser to view your php config.
