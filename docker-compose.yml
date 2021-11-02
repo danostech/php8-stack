@@ -14,17 +14,21 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    env_file:
+      - .env
     volumes:
       - ./app:/app
 
   mysql:
     image: mariadb:latest
     container_name: demo_db
+    ports:
+      - "33061:3306"
     environment:
       MYSQL_ROOT_PASSWORD: 'root'
-      MYSQL_USER: 'demo'
-      MYSQL_PASSWORD: 'demo'
-      MYSQL_DATABASE: 'demo'
+      MYSQL_USER: "${MYSQL_USER-demo}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD-demo}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE-demo}"
     volumes:
       - mysqldata:/var/lib/mysql
 
