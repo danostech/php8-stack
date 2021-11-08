@@ -1,4 +1,4 @@
-# php8 develop environment w/ Docker
+# php8 development environment w/ Docker
 A Docker and PHP 8 development environment with NGINX and MariaDB.  
 This is a minimal development environment. 
 Take a look at the included files to learn more if you're interested.   
